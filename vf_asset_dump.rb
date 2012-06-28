@@ -27,7 +27,7 @@ def get_number_of_assets
   num_pages = (num_result.round(4) / 100).ceil
 end
 
-#get the assets and for each asset on the page, request the page and yield
+#get the assets and for each asset on the page, request the asset XML body and yield
 def scrape_pages
   num_pages = get_number_of_assets
   (1..num_pages).each do |i| 
